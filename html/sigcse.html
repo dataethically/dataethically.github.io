@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  	<head>
+		<title>Theses on how SIGCSE can be problematic</title>
+		<style>
+			h1 {text-align: center;}
+			ul {
+      			list-style-type: square;
+			}
+			body {
+    			background-color: white;
+    			color: black;
+  			}
+
+  			body.dark-mode {
+   			background-color: black;
+   			color: white;
+  			}
+      
+        canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+  		</style>
+ 	</head>
+  	<body>
+      <canvas id="myCanvas"></canvas>
+		  <h1>Theses on how SIGCSE can be problematic</h1>
+      <script>
+			  function toggler() {
+			  document.body.classList.toggle("dark-mode");	   
+			  }
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 50;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+		  </script>
+		  <button onclick="toggler()" style="position:absolute; top:0; left:0;">Toggle dark mode</button>
+      <ul>
+			  <li>The SIGCSE community lacks transparency and accountability in decision-making processes.</li>
+        <li>The SIGCSE community should center the voices and experiences of underrepresented groups in computer science education.</li>
+        <li>The SIGCSE organization should be more open to feedback and criticism from its members and the wider community.</li>
+			  <li>How has the SIGCSE conference changed over time, and what factors have contributed to these changes?</li>
+			  <li>How can the SIGCSE community work to address the ethical and social implications of computer science education in a meaningful and responsible way?</li>
+			  <li>What steps can the SIGCSE community take to address academic elitism and make the conference more accessible to non-traditional educators and students?</li>
+			  <li>How can the SIGCSE conference better incorporate critical thinking and social responsibility into its curriculum and presentation topics?</li>
+			  <li>What alternative models of computer science education can SIGCSE explore to promote innovation and inclusivity?</li>
+			  <li>How can the panel review process be adjusted to better incorporate diversity of thought?</li>
+			  <li>The SIGCSE has become opposed to the iconoclasm which is inherent in computer science</li>
+			  <li>How can SIGCSE better engage with and elevate the voices and perspectives of underrepresented groups in computer science education?</li>
+			  <li>In what ways can the SIGCSE aim to achieve wider participation in computer science?</li>
+			  <li>What can SIGCSE do to promote cultural humility and sensitivity in its conference proceedings and materials?</li>
+			  <li>The SIGCSE conference's resistance to change and innovation hinders the growth and development of computer science education as a dynamic and evolving field.</li>
+			  <li>SIGCSE's lack of attention to the intersectionality of identities, such as race, gender, and sexuality, in computer science education perpetuates exclusion and discrimination in the field.</li>
+			  <li><strong>SIGCSE's lack of attention to the role of computer science education in shaping ethical and moral values contributes to a tech industry that prioritizes profit over social responsibility.</strong></li>
+			
+				
+		  </ul>
+	</body>
+</html>
