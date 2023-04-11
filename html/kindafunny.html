@@ -51,12 +51,22 @@
     		var mouseX = event.clientX - rect.left;
     		var mouseY = event.clientY - rect.top;
 
+    		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    		ctx.beginPath();
+   		ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
     		if (Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) <= radius) {
-      		canvas.style.backgroundColor = "green";
+      		ctx.fillStyle = "green";
     		} else {
-      		canvas.style.backgroundColor = "";
+      		ctx.fillStyle = "red";
     		}
-  }
+
+    		ctx.fill();
+    		ctx.lineWidth = 5;
+    		ctx.strokeStyle = "black";
+    		ctx.stroke();
+  		}
 
   		canvas.addEventListener("mousemove", handleMouseMove);
 	</script>
