@@ -30,23 +30,36 @@
       <canvas id="myCanvas"></canvas>
 		  <h1>The Portrayal of Black Hair in Video Games</h1>
       <script>
-			  function toggler() {
-			  document.body.classList.toggle("dark-mode");	   
-			  }
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        var centerX = canvas.width / 2;
-        var centerY = canvas.height / 2;
-        var radius = 50;
+		function toggler() {
+		document.body.classList.toggle("dark-mode");	   
+		}
+        	var canvas = document.getElementById("myCanvas");
+        	var ctx = canvas.getContext("2d");
+        	var centerX = canvas.width / 2;
+        	var centerY = canvas.height / 2;
+        	var radius = 50;
 
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-        ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.lineWidth = 5;
-        ctx.strokeStyle = "black";
-        ctx.stroke();
-		  </script>
+        	ctx.beginPath();
+        	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        	ctx.fillStyle = "red";
+        	ctx.fill();
+        	ctx.lineWidth = 5;
+        	ctx.strokeStyle = "black";
+        	ctx.stroke();
+	      	function handleMouseMove(event) {
+    		var rect = canvas.getBoundingClientRect();
+    		var mouseX = event.clientX - rect.left;
+    		var mouseY = event.clientY - rect.top;
+
+    		if (Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) <= radius) {
+      		canvas.style.backgroundColor = "green";
+    		} else {
+      		canvas.style.backgroundColor = "";
+    		}
+  }
+
+  		canvas.addEventListener("mousemove", handleMouseMove);
+	</script>
 		  <button onclick="toggler()" style="position:absolute; top:0; left:0;">Toggle dark mode</button>
       <ul>
           <li>The representation of African-American hair in video games is often limited and stereotypical, perpetuating harmful and inaccurate societal attitudes towards natural black hair.</li>
