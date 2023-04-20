@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  	<head>
+		<title>Facebook's Role in Contributing to Housing Discrimination</title>
+		<style>
+			h1 {text-align: center;}
+			ul {
+      			list-style-type: square;
+			}
+			body {
+    			background-color: white;
+    			color: black;
+  			}
+
+  			body.dark-mode {
+   			background-color: black;
+   			color: white;
+  			}
+      
+        canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+  		</style>
+ 	</head>
+  	<body>
+      <canvas id="myCanvas"></canvas>
+		  <h1>Facebook's Role in Contributing to Housing Discrimination</h1>
+      <script>
+		function toggler() {
+		document.body.classList.toggle("dark-mode");	   
+		}
+        	var canvas = document.getElementById("myCanvas");
+        	var ctx = canvas.getContext("2d");
+        	var centerX = canvas.width / 2;
+        	var centerY = canvas.height / 2;
+        	var radius = 50;
+
+        	ctx.beginPath();
+        	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        	ctx.fillStyle = "red";
+        	ctx.fill();
+        	ctx.lineWidth = 5;
+        	ctx.strokeStyle = "black";
+        	ctx.stroke();
+	      	function handleMouseMove(event) {
+    		var rect = canvas.getBoundingClientRect();
+    		var mouseX = event.clientX - rect.left;
+    		var mouseY = event.clientY - rect.top;
+
+    		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    		ctx.beginPath();
+   		ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+    		if (Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) <= radius) {
+      		ctx.fillStyle = "green";
+    		} else {
+      		ctx.fillStyle = "red";
+    		}
+
+    		ctx.fill();
+    		ctx.lineWidth = 5;
+    		ctx.strokeStyle = "black";
+    		ctx.stroke();
+  		}
+
+  		canvas.addEventListener("mousemove", handleMouseMove);
+	</script>
+		  <button onclick="toggler()" style="position:absolute; top:0; left:0;">Toggle dark mode</button>
+      <ul>
+        <li>Discrimination in housing is a serious problem that violates fundamental human rights and undermines social justice.</li>
+        <li>Technology platforms like Facebook have a responsibility to ensure that their advertising tools do not facilitate discrimination in housing.</li>
+        <li>The Fair Housing Act and other fair housing laws are essential tools for preventing discrimination in housing and promoting equal access to housing opportunities for all.</li>
+        <li>The allegations against Facebook suggest that its advertising platform allowed for discriminatory practices in housing, which is a violation of fair housing laws.</li>
+        <li>The settlement between Facebook and civil rights groups shows that Facebook recognizes the need to address these allegations and take action to prevent discrimination in housing ads.</li>
+        <li>The ongoing lawsuit filed by the National Fair Housing Alliance suggests that Facebook's efforts to prevent discrimination in housing ads may not be sufficient, and more needs to be done to ensure compliance with fair housing laws.</li>
+        <li>The use of algorithms and machine learning in advertising platforms like Facebook can potentially amplify and perpetuate discriminatory practices in housing if not properly regulated and monitored.</li>
+        <li>Addressing discrimination in housing requires a multi-pronged approach that involves education, outreach, enforcement, and policy reforms.</li>
+        <li>The role of civil society organizations, advocacy groups, and community-based organizations is critical in raising awareness about discrimination in housing and advocating for change.</li>
+        <li>The media has an important role to play in exposing discriminatory practices in housing and holding companies like Facebook accountable for any violations of fair housing laws.</li>
+        <li>Addressing discrimination in housing requires a broader societal commitment to promoting equity, diversity, and inclusion in all aspects of life.</li>
+        <li>The international community has a role to play in promoting and enforcing fair housing laws and addressing discrimination in housing on a global scale.</li>
+        <li>The COVID-19 pandemic has highlighted the urgent need to address the unequal impact of housing discrimination on marginalized communities, particularly people of color and low-income households.</li>
+        <li>Addressing discrimination in housing requires a long-term commitment to structural changes that promote fair housing practices and address systemic inequalities in housing markets.</li>
+        <li>The allegations and lawsuits against Facebook regarding discrimination in housing underscore the need for greater transparency, accountability, and regulation of technology platforms that have significant social and economic impacts.</li>
+      </ul>
+	</body>
+</html>
