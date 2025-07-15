@@ -20,7 +20,7 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "https://dataethically.github.io/"
   Projects:
     - Capstone: "https://dataethically.github.io/capstone-project"
     - Prague Metro: "https://dataethically.github.io/prague-metro-project"
