@@ -42,4 +42,3 @@ When I'm not working with data, I enjoy:
 ## Let's Connect
 
 I'm always interested in collaborating on interesting projects, discussing data science challenges, or simply connecting with fellow data enthusiasts. Feel free to reach out through my [contact page](/contact) or connect with me on [LinkedIn](https://linkedin.com/in/your-linkedin-username).
-EOF < /dev/null
