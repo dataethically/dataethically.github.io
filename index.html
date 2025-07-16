@@ -4,30 +4,92 @@ title: Welcome to My Portfolio
 subtitle: Passionate Data Scientist | Problem Solver | Continuous Learner
 ---
 
-## About Me
+<!-- Custom styles for homepage -->
+<style>
+  .hero {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .section-title {
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .card-custom {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    height: 100%;
+  }
+  .btn-primary-custom {
+    background-color: #4e54c8;
+    border-color: #4e54c8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  .btn-primary-custom:hover {
+    background-color: #3b40a0;
+    border-color: #3b40a0;
+  }
+</style>
 
-Welcome\! I'm Paxton Jones, a dedicated data science professional with a passion for turning complex data into actionable insights. My journey in data science has been driven by curiosity and a commitment to solving real-world problems through analytics, machine learning, and statistical modeling.
+<div class="hero">
+  <h1>{{ page.title }}</h1>
+  <p class="lead" style="font-size:1.25rem; margin-top:0.5rem;">{{ page.subtitle }}</p>
+</div>
 
-I specialize in:
-- **Machine Learning & AI**: Building predictive models and intelligent systems
-- **Data Analysis & Visualization**: Creating compelling stories from data
-- **Statistical Modeling**: Applying rigorous statistical methods to business problems
-- **Python & R Programming**: Developing efficient, scalable solutions
+<div class="container" style="max-width: 900px; margin: auto; padding: 2rem 1rem;">
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Welcome! I'm Paxton Jones, a dedicated data science professional with a passion for turning complex data into actionable insights. My journey in data science has been driven by curiosity and a commitment to solving real-world problems through analytics, machine learning, and statistical modeling.</p>
+  </section>
 
-## What Drives Me
+  <section id="expertise">
+    <h2 class="section-title">Expertise</h2>
+    <div class="row" style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+      <div class="col" style="flex:1 1 200px;">
+        <div class="card-custom">
+          <h5>Machine Learning & AI</h5>
+          <p>Building predictive models and intelligent systems</p>
+        </div>
+      </div>
+      <div class="col" style="flex:1 1 200px;">
+        <div class="card-custom">
+          <h5>Data Analysis & Visualization</h5>
+          <p>Creating compelling stories from data</p>
+        </div>
+      </div>
+      <div class="col" style="flex:1 1 200px;">
+        <div class="card-custom">
+          <h5>Statistical Modeling</h5>
+          <p>Applying rigorous statistical methods to business problems</p>
+        </div>
+      </div>
+      <div class="col" style="flex:1 1 200px;">
+        <div class="card-custom">
+          <h5>Python & R Programming</h5>
+          <p>Developing efficient, scalable solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-I'm passionate about using data to make a positive impact. Whether it's optimizing business processes, uncovering hidden patterns, or developing innovative solutions, I thrive on the challenge of extracting meaning from complexity.
+  <section id="current-focus">
+    <h2 class="section-title">Current Focus</h2>
+    <p>I'm currently working on my capstone project, which demonstrates my ability to tackle complex, real-world data challenges. This project showcases my skills in end-to-end data science workflows, from data collection and preprocessing to model deployment and visualization.</p>
+  </section>
 
-My interests extend beyond traditional data science to include:
-- Ethical AI and responsible data practices
-- Open source contributions and knowledge sharing
-- Continuous learning and staying current with emerging technologies
-- Mentoring and helping others grow in their data science journey
-
-## Current Focus
-
-I'm currently working on my capstone project, which demonstrates my ability to tackle complex, real-world data challenges. This project showcases my skills in end-to-end data science workflows, from data collection and preprocessing to model deployment and visualization.
-
----
-
-*Explore my [projects](/projects) to see my work in action, check out my [resume](/resume) for professional details, or [contact me](/contact) to discuss opportunities.*
+  <section id="cta" style="text-align:center; margin-top:2rem;">
+    <a href="/projects" class="btn-primary-custom">View Projects</a>
+    <a href="/resume" class="btn-primary-custom" style="background-color:#ffffff; color:#4e54c8; border:1px solid #4e54c8;">Resume</a>
+    <a href="/contact" class="btn-primary-custom">Contact Me</a>
+  </section>
+</div>
