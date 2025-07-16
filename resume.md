@@ -6,7 +6,7 @@ subtitle: Professional experience and qualifications
 
 ## Download Resume
 
-📄 **[Download PDF Resume](assets/files/paxton_resume.pdf)** *(Note: Add your actual resume PDF to the assets/files/ directory)*
+📄 **[Download PDF Resume](assets/files/paxton_resume.pdf)**
 
 ---
 # **Paxton Jones**
